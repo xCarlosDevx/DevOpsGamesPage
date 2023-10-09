@@ -30,7 +30,7 @@ const juegos = [
     imagen: "../assets/cyber.jpg",
     logo: "../assets/cyberlogo.jpg",
     nombre: "Cyberpunk 2077",
-    modalidad: "RPG de acción",
+    modalidad: "RPG",
     lanzamiento: 2020,
     descripcion:
       "Explora un futurista mundo abierto en este juego de rol de acción ambientado en Cyberpunk.",
@@ -39,7 +39,7 @@ const juegos = [
     imagen: "../assets/red.jpg",
     logo: "../assets/redlogo.jpg",
     nombre: "Red Dead Redemption 2",
-    modalidad: "Aventura de acción",
+    modalidad: "Aventura",
     lanzamiento: 2018,
     descripcion:
       "Embárcate en una épica aventura en el Viejo Oeste como Arthur Morgan en esta obra maestra de Rockstar Games.",
@@ -48,7 +48,7 @@ const juegos = [
     imagen: "../assets/witch.jpeg",
     logo: "../assets/witcherlogo.jpg",
     nombre: "The Witcher 4",
-    modalidad: "RPG de acción",
+    modalidad: "RPG",
     lanzamiento: 2024,
     descripcion:
       "La próxima entrega de la serie The Witcher con un nuevo protagonista y emocionantes historias.",
@@ -57,7 +57,7 @@ const juegos = [
     imagen: "../assets/halo.jpg",
     logo: "../assets/halologo.jpg",
     nombre: "Halo Infinite",
-    modalidad: "Shooter en primera persona",
+    modalidad: "Shooter",
     lanzamiento: 2021,
     descripcion:
       "El Jefe Maestro regresa en una nueva aventura en este icónico shooter de Xbox.",
@@ -66,7 +66,7 @@ const juegos = [
     imagen: "../assets/final.jpeg",
     logo: "../assets/finalogo.webp",
     nombre: "Final Fantasy XVI",
-    modalidad: "RPG de fantasía",
+    modalidad: "RPG",
     lanzamiento: 2023,
     descripcion:
       "Sumérgete en un mundo de magia y aventuras en la última entrega de la serie Final Fantasy.",
@@ -90,7 +90,8 @@ const juegos = [
       "La secuela del exitoso juego de Battle Royale de Call of Duty con nuevas armas y mapas.",
   },
 ];
-
+const search = document.getElementById("buscar");
+const category = document.getElementById("categoria");
 const container = document.getElementById("container");
 juegos.forEach((item) => {
   container.innerHTML += `    <div class="card">
@@ -117,3 +118,44 @@ juegos.forEach((item) => {
   </div>
 </div>`;
 });
+
+function filtrar() {
+  const arrayFilter = juegos.filter((item) => {
+    if (category.value != "default") {
+      return (
+        item.nombre.toLowerCase().includes(search.value.toLowerCase()) &&
+        item.modalidad.toLowerCase() == category.value.toLowerCase()
+      );
+    } else {
+      return item.nombre.toLowerCase().includes(search.value.toLowerCase());
+    }
+  });
+  if (arrayFilter.length > 0) {
+    container.innerHTML = "";
+  }
+  arrayFilter.forEach((item) => {
+    container.innerHTML += `    <div class="card">
+    <img
+      src="${item.imagen}"
+      class="card__image"
+      alt="Game image"
+    />
+    <div class="card__overlay">
+      <div class="card__header">
+        <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+          <path />
+        </svg>
+        <img class="card__thumb" src="${item.logo}" alt="Game logo" />
+        <div class="card__header-text">
+          <p class="card__name">${item.nombre}</p>
+          <p class="card__gender">Modalidad: <span>${item.modalidad}</span></p>
+          <p class="card__date">Lanzamiento: <span>${item.lanzamiento}</span></p>
+        </div>
+      </div>
+      <p class="card__description">
+      ${item.descripcion}
+      </p>
+    </div>
+  </div>`;
+  });
+}
