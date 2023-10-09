@@ -159,3 +159,8 @@ function filtrar() {
   </div>`;
   });
 }
+function onClear() {
+  search.value = "";
+  category.value = "default";
+  filtrar();
+}
