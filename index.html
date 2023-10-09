@@ -10,9 +10,11 @@
     <header>
       <nav class="nav">
         <ul>
-          <li class="logo"><img src="./assets/logo.jpg" alt="logo" /></li>
-          <li>Inicio</li>
-          <li>Contactanos</li>
+          <div class="logo">
+            <a href="/"><img src="./assets/logo.jpg" alt="logo" /></a>
+          </div>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="./html/contact.html">Contactanos</a></li>
         </ul>
       </nav>
     </header>
@@ -96,8 +98,8 @@
       </div>
       <section>
         <h2>Juegos mas recomendados</h2>
-        <div class="cards">
-          <div class="card">
+        <div id="container" class="cards">
+          <!-- <div class="card">
             <img
               src="../assets/forza.png"
               class="card__image"
@@ -116,232 +118,15 @@
                 </div>
               </div>
               <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
+                Nueva edición del simulador de conducción de Turn 10, rediseñado
+                por completo para la actual generación.
               </p>
             </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="../assets/forza.png"
-              class="card__image"
-              alt="Game image"
-            />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                  <path />
-                </svg>
-                <img class="card__thumb" src="../assets/forzaIcon.png" alt="" />
-                <div class="card__header-text">
-                  <p class="card__name">Forza Motorsport</p>
-                  <p class="card__gender">Modalidad: <span>Carreras</span></p>
-                  <p class="card__date">Lanzamiento: <span>2023</span></p>
-                </div>
-              </div>
-              <p class="card__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores, blanditiis?
-              </p>
-            </div>
-          </div>
+          </div> -->
         </div>
       </section>
-      <div class="cards"></div>
     </main>
     <footer></footer>
   </body>
+  <script src="js/index.js"></script>
 </html>

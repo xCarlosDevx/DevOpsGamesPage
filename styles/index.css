@@ -9,11 +9,9 @@ body {
   background-color: #a32121;
 }
 main {
-  /* background-color: #fff; */
   width: 100vw;
   height: 94vh;
   margin: auto;
-  /* padding: 10px; */
 }
 .nav ul {
   display: flex;
@@ -24,9 +22,19 @@ main {
   background: black;
 }
 .nav ul li {
+  height: 54px;
   color: white;
   list-style: none;
   padding-inline: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.nav ul li:hover {
+  background-color: #ef3030;
+}
+.nav ul a {
+  text-decoration: none;
 }
 .black {
   background-image: image-set("../assets/background.jpg");
@@ -104,7 +112,9 @@ input[type="text"]::placeholder {
   justify-content: center;
   align-items: center;
 }
-
+.filter:hover {
+  background-color: #b35656;
+}
 .filter__card {
   width: 90vw;
   margin: auto;
