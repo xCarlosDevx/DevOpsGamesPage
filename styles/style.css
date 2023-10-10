@@ -32,6 +32,7 @@ body {
   }
   .nav ul a {
     text-decoration: none;
+    color:white !important;
   }
 
   .logo {
@@ -47,17 +48,16 @@ body {
   }
 .card {
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
     margin: 20px auto;
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: space-around;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
-    margin-left: 73%;
+    width: 60%;
 }
 .card img{
     object-fit: contain;
@@ -116,13 +116,31 @@ form label {
     display: block;
     margin-bottom: 10px;
 }
-
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    width: 100%;
-    padding: 10px;
+    width: 125%;
+    margin: 0 auto; 
+    padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+.cta-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: darkred; 
 }
