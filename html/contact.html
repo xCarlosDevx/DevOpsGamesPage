@@ -1,35 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title> Contacto</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+  <title>DevOpsGames</title>
 </head>
+<header>
+  <nav class="nav">
+    <ul>
+      <div class="logo">
+        <a href="/"><img src="../assets/logo.jpg" alt="logo" /></a>
+      </div>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="../html/contact.html">Contactanos</a></li>
+    </ul>
+  </nav>
+</header>
 
-<body>
+<div class="card">
+  <a href="/"><img src="..\assets\logo.jpg" alt="logo" /></a>
+  <h1>Sobre Nosotros</h1>
+  <p>Carlos A. La Hoz, Desarrollador Frontend, lahozfrias@gmail.com</p>
+  <div class="redes-sociales">
+    <a href="https://www.linkedin.com/in/carlos-alejandro-la-hoz-frias-212924180/?originalSubdomain=do" target="_blank"><img src="..\assets\linkedin.png" alt="Linkedin"></a>
+    
+  </div>
+</div>
+<div class="card">
+  <a href="/"><img src="..\assets\logo.jpg" alt="logo" /></a>
+  <h1>Sobre Nosotros</h1>
+  <p>Stephanie Lopez Frias, Programadora/Diseñadora, StephanieLopezFrias@gmail.com</p>
+  <div class="redes-sociales">
+    <a href="https://www.linkedin.com/in/stephanie-l%C3%B3pez-266a3524a/" target="_blank"><img src="..\assets\linkedin.png" alt="Linkedin"></a>
+    
+  </div>
+</div>
 
-  <h2>Formulario de Contacto</h2>
-
-  <form action="" method="post">
+<section id="contacto" class="contacto">
+  <h2>Contacto</h2>
+  <p>¿Tienes alguna pregunta o comentario? ¡Contáctanos!</p>
+  <form>
     <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+    <input type="text" id="nombre" name="nombre" required>
 
     <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" name="apellido" required><br><br>
+    <input type="text" id="apellido" name="apellido" required>
 
-    <label for="telefono">Teléfono (Opcional):</label>
-    <input type="tel" id="telefono" name="telefono" ><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-    <label for="correo">Correo:</label>
-    <input type="email" id="correo" name="correo" required><br><br>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-
-    <input type="submit" value="Enviar">
+    <button type="submit" class="cta-button">Enviar</button>
   </form>
+</section>
 
+<footer>
+  <p>&copy; 2023 E/S</p>
+</footer>
 </body>
 
 </html>
